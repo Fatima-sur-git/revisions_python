@@ -1,7 +1,6 @@
-number = range(1,21)
+number = 0
 count = 0
 while count<10 :
-    for num in number:
-        if int(num) % 2 != 0:
-            print (num)
-            count += 1
+    print (number + 1)
+    count += 1
+    number += 2
