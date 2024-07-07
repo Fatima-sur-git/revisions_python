@@ -90,13 +90,12 @@ while int(choice) != 5 :
         
     menu()  
     choice = input("Quel est votre choix ? : ")
-    #on verifie toujours que l'option choisie est valide, tant que ce n'est pas le cas, on redemande à l'utilisateur de choisir
+    
     while not (choice.isdigit() and 1 <= int(choice) <= 5):
         print("mauvaise entrée, veuillez entrer une valeur entre 1 et 5")
         menu()
         choice = input("Quel est votre choix ? : ")
 
-#lorsque l'option choisie est 5, on n'affiche plus de menu et on ne demande plus à l'utilisateur de choisir.
 if int(choice) == 5 :  
     print("**Fin du programme!!!**")
     sys.exit()
