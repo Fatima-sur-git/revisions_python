@@ -10,3 +10,9 @@ class Transaction:
         self.transaction_date = date_transaction
         self.amount = montant
         self.method = canal
+
+    def display_transactions(transactions):
+        for transaction in transactions:
+            print(f""" 
+                
+""")

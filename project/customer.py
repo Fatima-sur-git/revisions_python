@@ -154,7 +154,7 @@ class Customer:
         the_customer = input("Veuillez svp entrer le code du client dont vous voulez voir le solde : ")
 
         for customer in customers:
-             if customer["id"]==the_customer:
+             if customer["id"] == the_customer:
                 print(f"""
                     Code : {customer["id"]}
                     Nom : {customer["name"]}
@@ -167,12 +167,12 @@ class Customer:
 
 
 
-Customer.add_customer(self="habib")
-Customer.add_customer()
-Customer.display_customers(Customer.customers)
-Customer.change_info()
-Customer.display_customers(Customer.customers)
-Customer.customer_balance(Customer.customers)
+#Customer.add_customer(self="habib")
+#Customer.add_customer()
+#Customer.display_customers(Customer.customers)
+#Customer.change_info()
+#Customer.display_customers(Customer.customers)
+#Customer.customer_balance(Customer.customers)
 #Customer.delete_customer()
 #Customer("D1","TARIK","781286853","DAKAR","0753habiba.fatima@gmail.com")
 #print(Customer.customers)
