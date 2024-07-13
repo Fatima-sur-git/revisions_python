@@ -1,3 +1,19 @@
+
+
+def menu_customers():
+
+    print("""
+          
+        Gestion des clients
+                
+        1- Afficher la liste des clients
+        2- Ajouter un client
+        3- Supprimer un client
+        4- Modifier les informations d'un client
+        5- Afficher le solde d'un client
+          
+""")
+
 class Customer:
 
     customers = []
@@ -33,7 +49,7 @@ class Customer:
             print("Il n'y a aucun client!")
 
     
-    def add_customer(self) :
+    def add_customer() :
 
         your_id = f"C0{Customer.customers_num}"
 
@@ -53,13 +69,17 @@ class Customer:
 
         your_mail = input("Veuillez svp entrer l'email du client : ")
 
+        your_balance = input("Veuillez svp entrer le solde du client : ")
+        while not your_balance.isdigit():
+            your_balance = input("Veuillez svp entrer le solde du client : ")
+
         new_customer = {
                     "id" : your_id,
                     "name" : your_name,
                     "phone" : your_phone,
                     "adress" : your_adress,
                     "mail" : your_mail,
-                    "balance" : self.balance
+                    "balance" : your_balance
         }
 
         Customer.customers.append(new_customer)
@@ -176,4 +196,4 @@ class Customer:
 #Customer.delete_customer()
 #Customer("D1","TARIK","781286853","DAKAR","0753habiba.fatima@gmail.com")
 #print(Customer.customers)
-    
+Customer.add_customer
