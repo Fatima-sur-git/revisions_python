@@ -38,11 +38,11 @@ while int(choice) != 3 :
 
         elif int(customer_management_choice) == 3 : 
 
-            Customer.delete_customer(Customer)  
+            Customer.delete_customer()  
 
         elif int(customer_management_choice) == 4 :
 
-            Customer.change_info(Customer) 
+            Customer.change_info() 
 
         else:
             Customer.customer_balance(Customer.customers)
